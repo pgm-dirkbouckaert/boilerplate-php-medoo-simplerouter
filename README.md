@@ -1,4 +1,4 @@
-# A PHP MVC boilerplate 
+# A PHP MVC boilerplate
 
 For this PHP boilerplate I'm using (Medoo)[https://medoo.in/] and (SimplePHPRouter)[https://github.com/steampixel/simplePHPRouter]
 
@@ -8,7 +8,7 @@ For this PHP boilerplate I'm using (Medoo)[https://medoo.in/] and (SimplePHPRout
 
 - Add tables to your database using the sql-file in the resources folder.
 
-- Run composer install 
+- Run composer install
 
 - Change rewriteBase in .htaccess (in root folder).
 

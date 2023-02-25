@@ -1,0 +1,38 @@
+body {
+  background-color: aliceblue;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar img {
+  width: 50px;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#selectCategory {
+  width: 100%;
+}
+
+i.fas {
+  cursor: pointer !important;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 50%;
+  }
+}

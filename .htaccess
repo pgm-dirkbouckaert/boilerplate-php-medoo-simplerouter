@@ -1,0 +1,28 @@
+# Set Session auto start
+php_value session.auto_start 1
+
+# Display php errors
+php_flag display_errors on
+
+# Disable index view
+options -Indexes
+
+# Block access to all dot files
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Block access to specified extensions
+<Files ~ "\.(env|json|lock|log|txt)$">
+  Order allow,deny
+  Deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /medoo-mvc
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.+)$ index.php [QSA,L]
+</IfModule>
