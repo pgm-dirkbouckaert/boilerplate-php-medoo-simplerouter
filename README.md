@@ -1,6 +1,6 @@
 # A PHP MVC boilerplate
 
-For this PHP boilerplate I'm using (Medoo)[https://medoo.in/] and (SimplePHPRouter)[https://github.com/steampixel/simplePHPRouter]
+For this PHP boilerplate I'm using [Medoo](https://medoo.in/) and [SimplePHPRouter](https://github.com/steampixel/simplePHPRouter).
 
 ### Installation
 
