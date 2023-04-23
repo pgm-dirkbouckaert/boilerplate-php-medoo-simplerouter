@@ -13,6 +13,6 @@ For this PHP boilerplate I'm using (Medoo)[https://medoo.in/] and (SimplePHPRout
 - Change rewriteBase in .htaccess (in root folder).
 
 - Change some parameters in the `.env`file (in the root folder)):
-  - app name in .env 
+  - app name 
   - database credentials
-  - mailtrap credenitals
+  - mailtrap credentials
