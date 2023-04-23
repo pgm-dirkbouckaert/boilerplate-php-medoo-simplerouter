@@ -1,7 +1,7 @@
 <?php
 
 //---------------
-//   ALGEMEEN
+//   GENERAL
 //---------------
 function d($args = null) {
   foreach (func_get_args() as $data) {
@@ -47,7 +47,7 @@ function redirectWithTimeout($path, $time = 2000) {
 
 
 //---------------
-//  FORMULIEREN
+//  FORMS
 //---------------
 function csrf() {
   echo '<input type="hidden" name="csrfToken" value="' . $_SESSION["csrfToken"] . '" />';
@@ -165,36 +165,8 @@ function clear_duplicate_cookies() {
 
 
 //---------------
-//  REGISTRATIE
+//  REGISTRATION
 //---------------
-function registrationAllowed($email) {
-
-  // Set url
-  $base_url = "https://script.google.com/macros/s/AKfycbyH0yYrQg6LOE9dp30EF7d-cmBRir6hNd2_5r765TKb1cw1W3WT/exec";
-  $url = $base_url . "?email=" . $email;
-
-  // Initialize a curl session
-  $curl = curl_init();
-
-  // Set options for CURLOPT_URL
-  curl_setopt($curl, CURLOPT_URL, $url);
-  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-  curl_setopt($curl, CURLOPT_HEADER, false);
-  curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
-
-  // Execute the curl session
-  $data = curl_exec($curl);
-
-  // Close the curl session
-  curl_close($curl);
-
-  // Get json
-  $json = json_decode($data, true); // true = return an associative array
-
-  // Return isMember (boolean)
-  return $json["isMember"];
-}
-
 function getResetPasswordHtml($resetlink) {
   return '
     <html>
